@@ -14,7 +14,16 @@ function bouncer(arr) {
 
 bouncer([7, "ate", "", false, 9]);
 
-// Sol 1.
+// Sol 2.
 function bouncer(arr) {
   return arr.filter(Boolean);
+}
+
+// Sol 3.
+function bouncer(arr) {
+  let newArray = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i]) newArray.push(arr[i]);
+  }
+  return newArray;
 }
